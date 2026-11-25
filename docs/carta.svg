@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 460" width="280" height="460"><defs><linearGradient id="d" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2a5c"/><stop offset="1" stop-color="#f4a582"/></linearGradient><linearGradient id="d2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4a582"/><stop offset="1" stop-color="#1f2a5c"/></linearGradient><clipPath id="c"><rect width="280" height="460" rx="20"/></clipPath></defs><g clip-path="url(#c)"><rect width="280" height="460" fill="url(#d)"/><rect y="346" width="280" height="114" fill="url(#d2)"/>
+<!-- fases de la luna (los ciclos) -->
+<circle cx="76" cy="74" r="8" fill="none" stroke="#f4a582" stroke-width="1.5" opacity="0.7"/><circle cx="108" cy="74" r="8" fill="none" stroke="#f4a582" stroke-width="1.5" opacity="0.7"/><path d="M108 66 A8 8 0 0 1 108 82 A4 8 0 0 0 108 66Z" fill="#f4a582"/><circle cx="140" cy="74" r="8" fill="none" stroke="#f4a582" stroke-width="1.5" opacity="0.7"/><path d="M140 66 A8 8 0 0 1 140 82Z" fill="#f4a582"/><circle cx="172" cy="74" r="8" fill="none" stroke="#f4a582" stroke-width="1.5" opacity="0.7"/><path d="M172 66 A8 8 0 0 1 172 82 A4 8 0 0 1 172 66Z" fill="#f4a582"/><circle cx="204" cy="74" r="8" fill="none" stroke="#f4a582" stroke-width="1.5" opacity="0.7"/><circle cx="204" cy="74" r="8" fill="#f4a582"/>
+<!-- la luna creciente con su halo -->
+<circle cx="140" cy="150" r="54" fill="none" stroke="#f4a582" stroke-width="1.5" stroke-dasharray="3 7" opacity="0.6"/>
+<path d="M140.1 108 A42 42 0 1 0 177.11 169.68 A36 36 0 1 1 140.1 108Z" fill="#f4a582"/>
+<!-- gotas que caen -->
+<path d="M96 206 q4 7 0 10 q-4 -3 0 -10Z" fill="#f4a582" opacity="0.85"/><path d="M118 228 q4 7 0 10 q-4 -3 0 -10Z" fill="#f4a582" opacity="0.85"/><path d="M162 226 q4 7 0 10 q-4 -3 0 -10Z" fill="#f4a582" opacity="0.85"/><path d="M186 204 q4 7 0 10 q-4 -3 0 -10Z" fill="#f4a582" opacity="0.85"/><path d="M140 244 q4 7 0 10 q-4 -3 0 -10Z" fill="#f4a582" opacity="0.85"/>
+<!-- colinas -->
+<path d="M0 346 Q70 318 140 334 Q210 350 280 326 V346 Z" fill="#1f2a5c" opacity="0.35"/>
+<!-- dos torres -->
+<g fill="#1f2a5c">
+<path d="M30 346 V214 H34 V204 H42 V214 H48 V204 H56 V214 H62 V204 H70 V214 H74 V346 Z"/>
+<path d="M206 346 V214 H210 V204 H218 V214 H224 V204 H232 V214 H238 V204 H246 V214 H250 V346 Z"/>
+</g>
+<path d="M47 246 Q52 238 57 246 V262 H47 Z M223 246 Q228 238 233 246 V262 H223 Z" fill="#f4a582"/>
+<!-- el camino entre las torres -->
+<path d="M136 334 Q126 344 138 352 Q156 362 120 374 H160 Q178 362 148 350 Q140 344 144 334 Z" fill="#1f2a5c" opacity="0.55"/>
+<!-- lista con casillas marcadas -->
+<rect x="84" y="374" width="112" height="60" rx="8" fill="#1f2a5c"/>
+<g fill="none" stroke="#f4a582" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<rect x="94" y="382" width="12" height="12" rx="2"/><path d="M96.5 388 L99.5 391 L104.5 385"/>
+<rect x="94" y="398" width="12" height="12" rx="2"/><path d="M96.5 404 L99.5 407 L104.5 401"/>
+<rect x="94" y="414" width="12" height="12" rx="2"/>
+</g>
+<g stroke="#f4a582" stroke-width="3" stroke-linecap="round" opacity="0.75"><path d="M114 388 H180 M114 404 H168 M114 420 H174"/></g>
+<path d="M50 120L51.5 123.5L55 125L51.5 126.5L50 130L48.5 126.5L45 125L48.5 123.5Z" fill="#f4a582"/><path d="M232 112L233.5 115.5L237 117L233.5 118.5L232 122L230.5 118.5L227 117L230.5 115.5Z" fill="#f4a582"/>
+<text x="140" y="40" text-anchor="middle" fill="#f4a582" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" letter-spacing="7" font-weight="bold">XVIII</text><text x="140" y="452" text-anchor="middle" fill="#f4a582" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" letter-spacing="8" font-weight="bold">LA LUNA</text></g></svg>

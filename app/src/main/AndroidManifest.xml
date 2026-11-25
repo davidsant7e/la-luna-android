@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Avisos opcionales (Android 13+ lo pregunta al activarlos en Ajustes). -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Volver a programar el siguiente aviso al prender el celular. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Luna">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Un respaldo .json compartido o abierto desde Archivos. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/json" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" />
+                <data android:mimeType="application/json" />
+            </intent-filter>
+            <!-- Mantener presionado el ícono → «Enviar registro». -->
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/atajos_registro" />
+        </activity>
+
+        <receiver
+            android:name=".avisos.AvisoReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".avisos.ArranqueReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Archivos que se exportan (respaldo JSON). -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.archivos"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rutas" />
+        </provider>
+
+        <!-- Registro (log) de la app: arranca solo con el proceso; se comparte desde el atajo del ícono. -->
+        <provider
+            android:name="com.davidsant7e.luna.registro.RegistroInicio"
+            android:authorities="${applicationId}.registro"
+            android:exported="false"
+            android:initOrder="1000" />
+        <activity
+            android:name="com.davidsant7e.luna.registro.EnviarRegistroActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+</manifest>
