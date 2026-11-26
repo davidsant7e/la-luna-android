@@ -49,10 +49,10 @@ Pruebas del núcleo: `./gradlew test`.
 
 ## Instalar
 
-**Sin el PC**: cada cambio en `main` se compila en GitHub Actions y el APK queda en [releases/ultima](https://github.com/davidsant7e/la-luna-android/releases/tag/ultima) → descarga [`la-luna.apk`](https://github.com/davidsant7e/la-luna-android/releases/download/ultima/la-luna.apk) en el celular e instálalo.
+**Sin el PC**: cada cambio en `main` se compila en GitHub Actions y el APK queda en [releases/ultima](https://github.com/el-ermitanho/la-luna-android/releases/tag/ultima) → descarga [`la-luna.apk`](https://github.com/el-ermitanho/la-luna-android/releases/download/ultima/la-luna.apk) en el celular e instálalo.
 
 **Con el PC**: `C:\Git\compilar-todo.bat`, o abre la carpeta en **Android Studio** y pulsa **Run** con el celular conectado.
 
 La llave de firma de prueba es la compartida de los Arcanos (`firma/`), así el APK del PC y uno compilado en GitHub se pueden instalar uno encima del otro.
 
-Parte del mazo de [davidsant7e](https://github.com/davidsant7e).
+Parte del mazo de [el-ermitanho](https://github.com/el-ermitanho).
